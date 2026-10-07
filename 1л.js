@@ -1,0 +1,9 @@
+'use strict';
+
+const a = 6;
+const b = inc1(a);
+function inc1(n) {
+  return n + 1;
+}
+console.dir( a, b );
+
