@@ -6,4 +6,3 @@ function inc1(n) {
   return n + 1;
 }
 console.dir( a, b );
-
