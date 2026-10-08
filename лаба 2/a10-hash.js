@@ -7,8 +7,11 @@ const hash = {
   'Yarick PolyanaKing': '+380445554436'
 };
 
-const findPhoneByName = (name) => {
-  return hash[name];
+const findPhoneByName = function(name){
+    if(typeof(hash[name]) === 'string'){
+        return hash[name];
+    }
+    return 'Not Found';
 };
 
 console.log(findPhoneByName('Yarick PolyanaKing'));
