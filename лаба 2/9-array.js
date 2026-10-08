@@ -8,9 +8,11 @@ const phoneBook = [
 ];
 
 const findPhoneByName = (name) => {
-  for (const entry of phoneBook) {
-    if (entry.name === name) return entry.phone;
+  for (const person of phoneBook) {
+    if (person.name === name) return person.phone;
   }
+
+  return 'Not found';
 };
 
 console.log(findPhoneByName('Yarick PolyanaKing'));
