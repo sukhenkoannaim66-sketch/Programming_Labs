@@ -1,1 +1,5 @@
+'use strict';
 
+let name = 'Anna';
+
+console.log(name);
