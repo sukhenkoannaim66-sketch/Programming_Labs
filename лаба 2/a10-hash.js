@@ -1,6 +1,6 @@
 'use strict';
 
-const hash = {
+const phoneBook = {
   'Gojo Satoru': '+380445554433',
   'Geto Suguru': '+380445554434',
   'Itadory Yuji': '+380445554435',
@@ -8,8 +8,8 @@ const hash = {
 };
 
 const findPhoneByName = function(name){
-    if(typeof(hash[name]) === 'string'){
-        return hash[name];
+    if(typeof(phoneBook[name]) === 'string'){
+        return phoneBook[name];
     }
     return 'Not Found';
 };
