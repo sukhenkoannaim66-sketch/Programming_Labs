@@ -1,1 +1,19 @@
+'use strict';
 
+const ages = (persons) => {
+  const result = {};
+  for (const name in persons) {
+    result[name] = persons[name].died - persons[name].born;
+  }
+  return result;
+};
+
+const persons = {
+  einstein: { born: 1879, died: 1955 },
+  newton: { born: 1643, died: 1727 },
+  curie: { born: 1867, died: 1934 },
+  bohr: { born: 1885, died: 1962 },
+  feynman: { born: 1918, died: 1988 },
+};
+
+console.log(ages(persons));
