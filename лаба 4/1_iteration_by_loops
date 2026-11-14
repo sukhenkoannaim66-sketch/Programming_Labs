@@ -1,1 +1,49 @@
+'use strict';
 
+const sumFor = (...args) => {
+  let sum = 0;
+  for (let i = 0; i < args.length; i++) {
+    sum += args[i];
+  }
+  return sum;
+};
+console.log(sumFor(1, 2, 3, 4, 5));
+
+
+const sumForOf = (...args) => {
+  let sum = 0;
+  for (const value of args) {
+    sum += value;
+  }
+  return sum;
+};
+console.log(sumForOf(1, 2, 3, 4, 5));
+
+
+const sumWhile = (...args) => {
+  let sum = 0;
+  let i = 0;
+  while (i < args.length) {
+    sum += args[i];
+    i++;
+  }
+  return sum;
+};
+console.log(sumWhile(1, 2, 3, 4, 5));
+
+
+const sumDoWhile = (...args) => {
+  if (args.length === 0) return 0;
+  let sum = 0;
+  let i = 0;
+  do {
+    sum += args[i];
+    i++;
+  } while (i < args.length);
+  return sum;
+};
+console.log(sumDoWhile(1, 2, 3, 4, 5));
+
+
+const sumReduce = (...args) => args.reduce((acc, value) => acc + value, 0);
+console.log(sumReduce(1, 2, 3, 4, 5));
